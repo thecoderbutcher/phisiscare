@@ -1,5 +1,5 @@
 import './global.css';
-import { useRoutes, BrowserRouter } from 'react-router-dom' 
+import { useRoutes, HashRouter } from 'react-router-dom' 
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Layout from './layout'
@@ -17,12 +17,12 @@ const AppRoutes = () => {
 }
 function App () {
     return (
-        <BrowserRouter>
+        <HashRouter>
             {/* <NavBar /> */}
             <Layout> 
                 <AppRoutes />
             </Layout>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
